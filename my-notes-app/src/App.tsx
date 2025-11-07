@@ -34,11 +34,14 @@ const handleSubmit = (e: React.FormEvent) => {
             <input type="text" 
             placeholder="Titulo"
             value={title} 
+            onChange={(e) => setTitle(e.target.value)}
+            required
             style={{ marginTop: "1rem" }}/> <br />
 
             <input type="text" 
             placeholder="Contenido" 
             value={body} 
+            onChange={(e) => setBody(e.target.value)}
             style={{ marginTop: "1rem" }}/>
         </div>
         <button type="submit" style={{ marginTop: "1rem" }}>Enviar</button>
